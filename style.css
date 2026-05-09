@@ -26,10 +26,10 @@ body {
 .profile {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 28px;
 }
 .profile h2 {
-    font-size: 15px;
+    font-size: 14px;
 }
 .menu {
     background-color: #3d3d3d;
@@ -40,7 +40,7 @@ body {
     transition: .5s;
 }
 .menu:hover {
-    width: 400px;
+    width: 260px;
 }
 ul {
     list-style: none;
@@ -64,6 +64,32 @@ ul li a:hover, .active, .data-info .box:hover, td:hover {
     border-radius: 8px;
     background-color: #ffffff55;
 }
+
+@media (max-width: 600px) {
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.profile h2 {
+    font-size: 8px;
+    /* display: none; */
+}
+    ul li a  p {
+        display: none;
+    }
+
+    .menu:hover {
+    background-color: #042d31;
+    width: 70px;
+}
+
+}
+
+
+
 .log-out {
     position: absolute;
     bottom: 0;
